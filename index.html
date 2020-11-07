@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>hello world</title>
+  </head>
+  <body>
+      <div style="text-align:right;">
+        Fall 2020
+      </div>
+      <div style="position:absolute;
+        top:5%;left:5%;bottom:5%;right:5%;">
+		<img class="svg"
+			style="width:100%;height:100%;"/>
+        <p style="text-align:center;"><u>A</u>pp<u>endix</u></p>
+        <p>
+            <ol>
+                <li>The Law
+                    <ol>
+                        <li>Justice
+                            <ol>
+                                <li>Strength</li>
+                                <li>Beauty</li>
+                                <li>Goodness</li> 
+                            </ol>
+                        </li>
+                        <li>Chaos
+                            <ol>
+                                <li>Frailty</li>
+                                <li>Horror</li>
+                                <li>Evil</li> 
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Property
+                    <ol>
+                        <li>Power
+                            <ol>
+                                <li>Pleasure</li>
+                                <li>Wealth</li>
+                                <li>Honor</li> 
+                            </ol>
+                        </li>
+                        <li>Void
+                            <ol>
+                                <li>Pain</li>
+                                <li>Poverty</li>
+                                <li>Shame</li> 
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Trade
+                    <ol>
+                        <li>Love
+                            <ol>
+                                <li>Romance</li>
+                                <li>Friendship</li>
+                                <li>Parenthood</li> 
+                            </ol>
+                        </li>
+                        <li>Death
+                            <ol>
+                                <li>Violence</li>
+                                <li>Enmity</li>
+                                <li>Enslavement</li> 
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            <ol>
+        </p>
+      </div>
+   	  
+      <script>
+
+        const width = screen.width;
+        console.log(width);
+        let img = document.querySelector('img');
+        if(screen.width <= 740) {
+            img.src =  "pantheon-mobile.svg";
+        } else {
+            img.src = "pantheon-desktop.svg";
+            img.style.tranform = "rotate(180deg)";
+        }
+        console.log(img);
+    
+      </script>
+  </body>
+</html>
